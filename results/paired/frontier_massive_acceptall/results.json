@@ -1,0 +1,372 @@
+{
+  "s0": {
+    "task": "massive",
+    "seed": 0,
+    "faithful": false,
+    "acceptance": "AcceptAll",
+    "S2_dev": 0.807,
+    "S2_test": 0.799,
+    "S2_depth": 1,
+    "S3_dev": 1.0,
+    "S3_test": 0.921,
+    "S3_depth": 8,
+    "A_t": 0.122,
+    "empty_rate": {
+      "S2": {
+        "optimize": 0.0,
+        "test": 0.0
+      },
+      "S3": {
+        "optimize": 0.0,
+        "test": 0.0
+      }
+    },
+    "max_empty_rate": 0.0,
+    "contaminated": false,
+    "quality_ok": true,
+    "probe": {
+      "seed_score": 0.0,
+      "breadth_ceiling": 1.0,
+      "depth_ceiling": 1.0,
+      "depth_over_breadth": 0.0,
+      "mean_imp_round1": 0.797,
+      "mean_imp_round2": 0.0,
+      "depth_gain": 0.0,
+      "dg_norm": 0.0
+    },
+    "done": true
+  },
+  "s1": {
+    "task": "massive",
+    "seed": 1,
+    "faithful": false,
+    "acceptance": "AcceptAll",
+    "S2_dev": 0.807,
+    "S2_test": 0.888,
+    "S2_depth": 1,
+    "S3_dev": 0.945,
+    "S3_test": 0.898,
+    "S3_depth": 8,
+    "A_t": 0.01,
+    "empty_rate": {
+      "S2": {
+        "optimize": 0.0,
+        "test": 0.0
+      },
+      "S3": {
+        "optimize": 0.0,
+        "test": 0.0
+      }
+    },
+    "max_empty_rate": 0.0,
+    "contaminated": false,
+    "quality_ok": true,
+    "probe": {
+      "seed_score": 0.0,
+      "breadth_ceiling": 0.752,
+      "depth_ceiling": 0.835,
+      "depth_over_breadth": 0.083,
+      "mean_imp_round1": 0.617,
+      "mean_imp_round2": 0.017,
+      "depth_gain": 0.028,
+      "dg_norm": 0.333
+    },
+    "done": true
+  },
+  "s2": {
+    "task": "massive",
+    "seed": 2,
+    "faithful": false,
+    "acceptance": "AcceptAll",
+    "S2_dev": 0.807,
+    "S2_test": 0.637,
+    "S2_depth": 1,
+    "S3_dev": 1.0,
+    "S3_test": 0.921,
+    "S3_depth": 9,
+    "A_t": 0.284,
+    "empty_rate": {
+      "S2": {
+        "optimize": 0.0,
+        "test": 0.0
+      },
+      "S3": {
+        "optimize": 0.0,
+        "test": 0.0
+      }
+    },
+    "max_empty_rate": 0.0,
+    "contaminated": false,
+    "quality_ok": true,
+    "probe": {
+      "seed_score": 0.0,
+      "breadth_ceiling": 0.89,
+      "depth_ceiling": 0.973,
+      "depth_over_breadth": 0.083,
+      "mean_imp_round1": 0.728,
+      "mean_imp_round2": 0.024,
+      "depth_gain": 0.033,
+      "dg_norm": 0.75
+    },
+    "done": true
+  },
+  "s3": {
+    "task": "massive",
+    "seed": 3,
+    "faithful": false,
+    "acceptance": "AcceptAll",
+    "S2_dev": 0.862,
+    "S2_test": 0.832,
+    "S2_depth": 1,
+    "S3_dev": 0.945,
+    "S3_test": 0.924,
+    "S3_depth": 9,
+    "A_t": 0.092,
+    "empty_rate": {
+      "S2": {
+        "optimize": 0.0,
+        "test": 0.0
+      },
+      "S3": {
+        "optimize": 0.0,
+        "test": 0.0
+      }
+    },
+    "max_empty_rate": 0.0,
+    "contaminated": false,
+    "quality_ok": true,
+    "probe": {
+      "seed_score": 0.0,
+      "breadth_ceiling": 0.89,
+      "depth_ceiling": 0.945,
+      "depth_over_breadth": 0.055,
+      "mean_imp_round1": 0.718,
+      "mean_imp_round2": 0.031,
+      "depth_gain": 0.043,
+      "dg_norm": 0.5
+    },
+    "done": true
+  },
+  "s4": {
+    "task": "massive",
+    "seed": 4,
+    "faithful": false,
+    "acceptance": "AcceptAll",
+    "S2_dev": 0.725,
+    "S2_test": 0.749,
+    "S2_depth": 1,
+    "S3_dev": 0.973,
+    "S3_test": 0.914,
+    "S3_depth": 8,
+    "A_t": 0.165,
+    "empty_rate": {
+      "S2": {
+        "optimize": 0.0,
+        "test": 0.0
+      },
+      "S3": {
+        "optimize": 0.0,
+        "test": 0.0
+      }
+    },
+    "max_empty_rate": 0.0,
+    "contaminated": false,
+    "quality_ok": true,
+    "probe": {
+      "seed_score": 0.0,
+      "breadth_ceiling": 0.78,
+      "depth_ceiling": 0.89,
+      "depth_over_breadth": 0.11,
+      "mean_imp_round1": 0.656,
+      "mean_imp_round2": 0.031,
+      "depth_gain": 0.047,
+      "dg_norm": 0.5
+    },
+    "done": true
+  },
+  "s5": {
+    "task": "massive",
+    "seed": 5,
+    "faithful": false,
+    "acceptance": "AcceptAll",
+    "S2_dev": 0.78,
+    "S2_test": 0.756,
+    "S2_depth": 1,
+    "S3_dev": 1.0,
+    "S3_test": 0.957,
+    "S3_depth": 9,
+    "A_t": 0.201,
+    "empty_rate": {
+      "S2": {
+        "optimize": 0.0,
+        "test": 0.0
+      },
+      "S3": {
+        "optimize": 0.0,
+        "test": 0.0
+      }
+    },
+    "max_empty_rate": 0.0,
+    "contaminated": false,
+    "quality_ok": true,
+    "probe": {
+      "seed_score": 0.0,
+      "breadth_ceiling": 0.862,
+      "depth_ceiling": 0.945,
+      "depth_over_breadth": 0.083,
+      "mean_imp_round1": 0.783,
+      "mean_imp_round2": 0.038,
+      "depth_gain": 0.048,
+      "dg_norm": 0.6
+    },
+    "done": true
+  },
+  "s7": {
+    "task": "massive",
+    "seed": 7,
+    "faithful": false,
+    "acceptance": "AcceptAll",
+    "S2_dev": 0.725,
+    "S2_test": 0.673,
+    "S2_depth": 1,
+    "S3_dev": 0.807,
+    "S3_test": 0.888,
+    "S3_depth": 7,
+    "A_t": 0.215,
+    "empty_rate": {
+      "S2": {
+        "optimize": 0.0,
+        "test": 0.0
+      },
+      "S3": {
+        "optimize": 0.0,
+        "test": 0.0
+      }
+    },
+    "max_empty_rate": 0.0,
+    "contaminated": false,
+    "quality_ok": true,
+    "probe": {
+      "seed_score": 0.0,
+      "breadth_ceiling": 1.0,
+      "depth_ceiling": 1.0,
+      "depth_over_breadth": 0.0,
+      "mean_imp_round1": 0.704,
+      "mean_imp_round2": 0.0,
+      "depth_gain": 0.0,
+      "dg_norm": 0.0
+    },
+    "done": true
+  },
+  "s8": {
+    "task": "massive",
+    "seed": 8,
+    "faithful": false,
+    "acceptance": "AcceptAll",
+    "S2_dev": 0.725,
+    "S2_test": 0.726,
+    "S2_depth": 1,
+    "S3_dev": 1.0,
+    "S3_test": 0.927,
+    "S3_depth": 5,
+    "A_t": 0.201,
+    "empty_rate": {
+      "S2": {
+        "optimize": 0.0,
+        "test": 0.0
+      },
+      "S3": {
+        "optimize": 0.0,
+        "test": 0.0
+      }
+    },
+    "max_empty_rate": 0.0,
+    "contaminated": false,
+    "quality_ok": true,
+    "probe": {
+      "seed_score": 0.0,
+      "breadth_ceiling": 0.78,
+      "depth_ceiling": 0.973,
+      "depth_over_breadth": 0.193,
+      "mean_imp_round1": 0.704,
+      "mean_imp_round2": 0.107,
+      "depth_gain": 0.151,
+      "dg_norm": 0.875
+    },
+    "done": true
+  },
+  "s9": {
+    "task": "massive",
+    "seed": 9,
+    "faithful": false,
+    "acceptance": "AcceptAll",
+    "S2_dev": 0.78,
+    "S2_test": 0.759,
+    "S2_depth": 1,
+    "S3_dev": 0.917,
+    "S3_test": 0.98,
+    "S3_depth": 7,
+    "A_t": 0.221,
+    "empty_rate": {
+      "S2": {
+        "optimize": 0.0,
+        "test": 0.0
+      },
+      "S3": {
+        "optimize": 0.0,
+        "test": 0.0
+      }
+    },
+    "max_empty_rate": 0.0,
+    "contaminated": false,
+    "quality_ok": true,
+    "probe": {
+      "seed_score": 0.0,
+      "breadth_ceiling": 0.78,
+      "depth_ceiling": 0.752,
+      "depth_over_breadth": -0.027,
+      "mean_imp_round1": 0.618,
+      "mean_imp_round2": 0.0,
+      "depth_gain": 0.0,
+      "dg_norm": 0.0
+    },
+    "done": true
+  },
+  "s6": {
+    "task": "massive",
+    "seed": 6,
+    "faithful": false,
+    "acceptance": "AcceptAll",
+    "S2_dev": 0.725,
+    "S2_test": 0.713,
+    "S2_depth": 1,
+    "S3_dev": 0.89,
+    "S3_test": 0.891,
+    "S3_depth": 6,
+    "A_t": 0.178,
+    "empty_rate": {
+      "S2": {
+        "optimize": 0.0,
+        "test": 0.0
+      },
+      "S3": {
+        "optimize": 0.0,
+        "test": 0.0
+      }
+    },
+    "max_empty_rate": 0.0,
+    "contaminated": false,
+    "quality_ok": true,
+    "probe": {
+      "seed_score": 0.0,
+      "breadth_ceiling": 0.917,
+      "depth_ceiling": 1.0,
+      "depth_over_breadth": 0.083,
+      "mean_imp_round1": 0.691,
+      "mean_imp_round2": 0.058,
+      "depth_gain": 0.085,
+      "dg_norm": 1.0
+    },
+    "done": true
+  }
+}

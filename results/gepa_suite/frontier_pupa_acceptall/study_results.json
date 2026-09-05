@@ -1,0 +1,481 @@
+{
+  "config": {
+    "task_model": "openai/gpt-5.6-luna",
+    "task_reasoning": false,
+    "task_reasoning_effort": null,
+    "task_max_tokens": 50000,
+    "reflect_model": "openai/gpt-5.6-terra",
+    "reflect_reasoning": false,
+    "reflect_kwargs": {
+      "max_completion_tokens": 8000,
+      "reasoning_effort": "low"
+    },
+    "n_iters": 6,
+    "minibatch_size": 3,
+    "dataset": "pupa",
+    "splits": {
+      "train": 20,
+      "dev": 20,
+      "test": 100
+    },
+    "seeds": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "arms": [
+      "S2",
+      "S3"
+    ]
+  },
+  "quality_gate": {
+    "dev_base_floor": 0.05,
+    "empty_rate_max": 0.15
+  },
+  "n_seeds": 10,
+  "n_done": 10,
+  "n_matched": 10,
+  "n_clean": 10,
+  "contaminated_seeds": [],
+  "A_t_dev": {
+    "mean": 0.045575,
+    "sd": 0.03196991750067557,
+    "ci95": [
+      0.025759839841676756,
+      0.06539016015832325
+    ],
+    "n": 10
+  },
+  "A_t_test": {
+    "mean": 0.01986744047619049,
+    "sd": 0.023084225972604133,
+    "ci95": [
+      0.005559688985483325,
+      0.03417519196689765
+    ],
+    "n": 10
+  },
+  "mean_A_t_dev_matched": 0.045575,
+  "mean_A_t_test_matched": 0.01986744047619049,
+  "total_cost": 6.267379480000001,
+  "per_seed": [
+    {
+      "seed": 0,
+      "matched": true,
+      "match_failures": [],
+      "quality_ok": true,
+      "quality_reasons": [],
+      "diagnostics": {
+        "candidate_evals": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "task_rollouts": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "validation_paired": true,
+        "critical_path_depth": {
+          "S2": 1,
+          "S3": 3
+        }
+      },
+      "dev": {
+        "S2": 0.675,
+        "S3": 0.6865,
+        "A_t": 0.011499999999999955
+      },
+      "test": {
+        "S2": 0.71983125,
+        "S3": 0.7158416666666666,
+        "A_t": -0.003989583333333435
+      },
+      "empty_rates": {
+        "S2_opt": 0.0,
+        "S3_opt": 0.0,
+        "S2_test": 0.0,
+        "S3_test": 0.0
+      },
+      "cost": 0.59577484
+    },
+    {
+      "seed": 1,
+      "matched": true,
+      "match_failures": [],
+      "quality_ok": true,
+      "quality_reasons": [],
+      "diagnostics": {
+        "candidate_evals": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "task_rollouts": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "validation_paired": true,
+        "critical_path_depth": {
+          "S2": 1,
+          "S3": 2
+        }
+      },
+      "dev": {
+        "S2": 0.6649999999999999,
+        "S3": 0.7224999999999999,
+        "A_t": 0.057499999999999996
+      },
+      "test": {
+        "S2": 0.6862583333333333,
+        "S3": 0.6863750000000001,
+        "A_t": 0.00011666666666676484
+      },
+      "empty_rates": {
+        "S2_opt": 0.0,
+        "S3_opt": 0.0,
+        "S2_test": 0.0,
+        "S3_test": 0.0
+      },
+      "cost": 0.62250568
+    },
+    {
+      "seed": 2,
+      "matched": true,
+      "match_failures": [],
+      "quality_ok": true,
+      "quality_reasons": [],
+      "diagnostics": {
+        "candidate_evals": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "task_rollouts": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "validation_paired": true,
+        "critical_path_depth": {
+          "S2": 1,
+          "S3": 4
+        }
+      },
+      "dev": {
+        "S2": 0.7125,
+        "S3": 0.71,
+        "A_t": -0.0025000000000000577
+      },
+      "test": {
+        "S2": 0.6819333333333333,
+        "S3": 0.7184416666666666,
+        "A_t": 0.036508333333333365
+      },
+      "empty_rates": {
+        "S2_opt": 0.0,
+        "S3_opt": 0.0,
+        "S2_test": 0.0,
+        "S3_test": 0.0
+      },
+      "cost": 0.6423885
+    },
+    {
+      "seed": 3,
+      "matched": true,
+      "match_failures": [],
+      "quality_ok": true,
+      "quality_reasons": [],
+      "diagnostics": {
+        "candidate_evals": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "task_rollouts": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "validation_paired": true,
+        "critical_path_depth": {
+          "S2": 1,
+          "S3": 4
+        }
+      },
+      "dev": {
+        "S2": 0.6625,
+        "S3": 0.7462500000000001,
+        "A_t": 0.0837500000000001
+      },
+      "test": {
+        "S2": 0.7208416666666666,
+        "S3": 0.7394875000000001,
+        "A_t": 0.018645833333333472
+      },
+      "empty_rates": {
+        "S2_opt": 0.0,
+        "S3_opt": 0.0,
+        "S2_test": 0.0,
+        "S3_test": 0.0
+      },
+      "cost": 0.62238542
+    },
+    {
+      "seed": 4,
+      "matched": true,
+      "match_failures": [],
+      "quality_ok": true,
+      "quality_reasons": [],
+      "diagnostics": {
+        "candidate_evals": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "task_rollouts": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "validation_paired": true,
+        "critical_path_depth": {
+          "S2": 1,
+          "S3": 3
+        }
+      },
+      "dev": {
+        "S2": 0.6625,
+        "S3": 0.7375,
+        "A_t": 0.07500000000000007
+      },
+      "test": {
+        "S2": 0.6982354166666667,
+        "S3": 0.7309583333333333,
+        "A_t": 0.0327229166666666
+      },
+      "empty_rates": {
+        "S2_opt": 0.0,
+        "S3_opt": 0.0,
+        "S2_test": 0.0,
+        "S3_test": 0.0
+      },
+      "cost": 0.6404122800000001
+    },
+    {
+      "seed": 5,
+      "matched": true,
+      "match_failures": [],
+      "quality_ok": true,
+      "quality_reasons": [],
+      "diagnostics": {
+        "candidate_evals": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "task_rollouts": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "validation_paired": true,
+        "critical_path_depth": {
+          "S2": 1,
+          "S3": 4
+        }
+      },
+      "dev": {
+        "S2": 0.63425,
+        "S3": 0.6975,
+        "A_t": 0.06325000000000003
+      },
+      "test": {
+        "S2": 0.6281940476190476,
+        "S3": 0.6925416666666666,
+        "A_t": 0.06434761904761899
+      },
+      "empty_rates": {
+        "S2_opt": 0.0,
+        "S3_opt": 0.0,
+        "S2_test": 0.0,
+        "S3_test": 0.0
+      },
+      "cost": 0.64141752
+    },
+    {
+      "seed": 6,
+      "matched": true,
+      "match_failures": [],
+      "quality_ok": true,
+      "quality_reasons": [],
+      "diagnostics": {
+        "candidate_evals": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "task_rollouts": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "validation_paired": true,
+        "critical_path_depth": {
+          "S2": 1,
+          "S3": 3
+        }
+      },
+      "dev": {
+        "S2": 0.6599999999999999,
+        "S3": 0.6849999999999999,
+        "A_t": 0.025000000000000022
+      },
+      "test": {
+        "S2": 0.7071625,
+        "S3": 0.7110583333333333,
+        "A_t": 0.0038958333333333206
+      },
+      "empty_rates": {
+        "S2_opt": 0.0,
+        "S3_opt": 0.0,
+        "S2_test": 0.0,
+        "S3_test": 0.0
+      },
+      "cost": 0.62591076
+    },
+    {
+      "seed": 7,
+      "matched": true,
+      "match_failures": [],
+      "quality_ok": true,
+      "quality_reasons": [],
+      "diagnostics": {
+        "candidate_evals": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "task_rollouts": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "validation_paired": true,
+        "critical_path_depth": {
+          "S2": 1,
+          "S3": 3
+        }
+      },
+      "dev": {
+        "S2": 0.65125,
+        "S3": 0.7464999999999999,
+        "A_t": 0.09524999999999995
+      },
+      "test": {
+        "S2": 0.65325,
+        "S3": 0.7016583333333334,
+        "A_t": 0.048408333333333387
+      },
+      "empty_rates": {
+        "S2_opt": 0.0,
+        "S3_opt": 0.0,
+        "S2_test": 0.0,
+        "S3_test": 0.0
+      },
+      "cost": 0.6391217
+    },
+    {
+      "seed": 8,
+      "matched": true,
+      "match_failures": [],
+      "quality_ok": true,
+      "quality_reasons": [],
+      "diagnostics": {
+        "candidate_evals": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "task_rollouts": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "validation_paired": true,
+        "critical_path_depth": {
+          "S2": 1,
+          "S3": 3
+        }
+      },
+      "dev": {
+        "S2": 0.65875,
+        "S3": 0.6895,
+        "A_t": 0.030750000000000055
+      },
+      "test": {
+        "S2": 0.6760815476190476,
+        "S3": 0.6731416666666666,
+        "A_t": -0.0029398809523809577
+      },
+      "empty_rates": {
+        "S2_opt": 0.0,
+        "S3_opt": 0.0,
+        "S2_test": 0.0,
+        "S3_test": 0.0
+      },
+      "cost": 0.62284154
+    },
+    {
+      "seed": 9,
+      "matched": true,
+      "match_failures": [],
+      "quality_ok": true,
+      "quality_reasons": [],
+      "diagnostics": {
+        "candidate_evals": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "task_rollouts": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "validation_paired": true,
+        "critical_path_depth": {
+          "S2": 1,
+          "S3": 3
+        }
+      },
+      "dev": {
+        "S2": 0.6637500000000001,
+        "S3": 0.6799999999999999,
+        "A_t": 0.016249999999999876
+      },
+      "test": {
+        "S2": 0.6845416666666666,
+        "S3": 0.6855,
+        "A_t": 0.0009583333333333943
+      },
+      "empty_rates": {
+        "S2_opt": 0.0,
+        "S3_opt": 0.0,
+        "S2_test": 0.0,
+        "S3_test": 0.01
+      },
+      "cost": 0.61462124
+    }
+  ],
+  "merged_from": [
+    "runs/full/frontier__study_pupa",
+    "runs/frontier_study_pupa_fill"
+  ]
+}

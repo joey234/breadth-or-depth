@@ -1,0 +1,166 @@
+{
+  "mid": [
+    {
+      "label": "structured-subtle",
+      "g": 0.25,
+      "d": 1.0,
+      "y": 0.25,
+      "lo": 0.25,
+      "hi": 0.25,
+      "truth": "depth",
+      "pred": "depth"
+    },
+    {
+      "label": "TOP-v2",
+      "g": 0.213,
+      "d": 0.321,
+      "y": 0.217,
+      "lo": 0.163,
+      "hi": 0.271,
+      "truth": "depth",
+      "pred": "depth"
+    },
+    {
+      "label": "HotpotQA",
+      "g": 0.0,
+      "d": 0.0,
+      "y": -0.002,
+      "lo": -0.019,
+      "hi": 0.015,
+      "truth": "breadth",
+      "pred": "breadth"
+    },
+    {
+      "label": "HoVer",
+      "g": 0.05,
+      "d": 0.25,
+      "y": 0.011,
+      "lo": -0.02,
+      "hi": 0.042,
+      "truth": "breadth",
+      "pred": "depth"
+    },
+    {
+      "label": "IFBench",
+      "g": 0.0,
+      "d": 0.0,
+      "y": 0.015,
+      "lo": -0.025,
+      "hi": 0.054,
+      "truth": "inconclusive",
+      "pred": "breadth"
+    },
+    {
+      "label": "PUPA",
+      "g": 0.118,
+      "d": 0.19,
+      "y": 0.047,
+      "lo": -0.023,
+      "hi": 0.117,
+      "truth": "inconclusive",
+      "pred": "depth"
+    },
+    {
+      "label": "MBPP",
+      "g": 0.0,
+      "d": 0.0,
+      "y": 0.017,
+      "lo": 0.008,
+      "hi": 0.025,
+      "truth": "breadth",
+      "pred": "breadth"
+    },
+    {
+      "label": "function calling",
+      "g": 0.0,
+      "d": 0.0,
+      "y": -0.001,
+      "lo": -0.009,
+      "hi": 0.006,
+      "truth": "breadth",
+      "pred": "breadth"
+    }
+  ],
+  "frontier": [
+    {
+      "label": "structured-subtle",
+      "g": 0.25,
+      "d": 1.0,
+      "y": 0.25,
+      "lo": 0.25,
+      "hi": 0.25,
+      "truth": "depth",
+      "pred": "depth"
+    },
+    {
+      "label": "TOP-v2",
+      "g": 0.162,
+      "d": 0.342,
+      "y": 0.163,
+      "lo": 0.08,
+      "hi": 0.246,
+      "truth": "depth",
+      "pred": "depth"
+    },
+    {
+      "label": "HotpotQA",
+      "g": 0.002,
+      "d": 0.024,
+      "y": 0.008,
+      "lo": 0.0,
+      "hi": 0.016,
+      "truth": "breadth",
+      "pred": "breadth"
+    },
+    {
+      "label": "HoVer",
+      "g": 0.0,
+      "d": 0.0,
+      "y": 0.03,
+      "lo": -0.014,
+      "hi": 0.074,
+      "truth": "inconclusive",
+      "pred": "breadth"
+    },
+    {
+      "label": "IFBench",
+      "g": 0.0,
+      "d": 0.0,
+      "y": -0.019,
+      "lo": -0.053,
+      "hi": 0.016,
+      "truth": "breadth",
+      "pred": "breadth"
+    },
+    {
+      "label": "PUPA",
+      "g": 0.004,
+      "d": 0.013,
+      "y": 0.02,
+      "lo": 0.002,
+      "hi": 0.037,
+      "truth": "breadth",
+      "pred": "breadth"
+    },
+    {
+      "label": "MBPP",
+      "g": 0.0,
+      "d": 0.0,
+      "y": -0.002,
+      "lo": -0.047,
+      "hi": 0.043,
+      "truth": "breadth",
+      "pred": "breadth"
+    },
+    {
+      "label": "function calling",
+      "g": 0.03,
+      "d": 0.268,
+      "y": 0.028,
+      "lo": -0.038,
+      "hi": 0.094,
+      "truth": "inconclusive",
+      "pred": "breadth"
+    }
+  ]
+}

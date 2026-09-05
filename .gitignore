@@ -1,0 +1,14 @@
+.env
+.DS_Store
+.venv/
+**/__pycache__/
+*.pyc
+*.bak
+**/*.egg-info/
+
+# Fresh local runs (paper outputs live in results/)
+runs/
+IFBench/
+*.tar.gz
+tmp/
+_to_delete/

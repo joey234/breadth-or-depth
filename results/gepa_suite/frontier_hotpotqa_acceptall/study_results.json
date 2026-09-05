@@ -1,0 +1,481 @@
+{
+  "config": {
+    "task_model": "openai/gpt-5.6-luna",
+    "task_reasoning": false,
+    "task_reasoning_effort": null,
+    "task_max_tokens": 50000,
+    "reflect_model": "openai/gpt-5.6-terra",
+    "reflect_reasoning": false,
+    "reflect_kwargs": {
+      "max_completion_tokens": 8000,
+      "reasoning_effort": "low"
+    },
+    "n_iters": 6,
+    "minibatch_size": 3,
+    "dataset": "hotpotqa",
+    "splits": {
+      "train": 20,
+      "dev": 20,
+      "test": 100
+    },
+    "seeds": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "arms": [
+      "S2",
+      "S3"
+    ]
+  },
+  "quality_gate": {
+    "dev_base_floor": 0.05,
+    "empty_rate_max": 0.15
+  },
+  "n_seeds": 10,
+  "n_done": 10,
+  "n_matched": 10,
+  "n_clean": 10,
+  "contaminated_seeds": [],
+  "A_t_dev": {
+    "mean": -0.020047619047619016,
+    "sd": 0.027373456530898305,
+    "ci95": [
+      -0.037013863181192,
+      -0.003081374914046031
+    ],
+    "n": 10
+  },
+  "A_t_test": {
+    "mean": 0.008202093111566822,
+    "sd": 0.01077439639871775,
+    "ci95": [
+      0.001524053037007922,
+      0.014880133186125723
+    ],
+    "n": 10
+  },
+  "mean_A_t_dev_matched": -0.020047619047619016,
+  "mean_A_t_test_matched": 0.008202093111566822,
+  "total_cost": 3.49350352,
+  "per_seed": [
+    {
+      "seed": 0,
+      "matched": true,
+      "match_failures": [],
+      "quality_ok": true,
+      "quality_reasons": [],
+      "diagnostics": {
+        "candidate_evals": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "task_rollouts": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "validation_paired": true,
+        "critical_path_depth": {
+          "S2": 1,
+          "S3": 4
+        }
+      },
+      "dev": {
+        "S2": 0.8245238095238095,
+        "S3": 0.8645238095238096,
+        "A_t": 0.040000000000000036
+      },
+      "test": {
+        "S2": 0.719484126984127,
+        "S3": 0.7456800976800977,
+        "A_t": 0.026195970695970683
+      },
+      "empty_rates": {
+        "S2_opt": 0.0,
+        "S3_opt": 0.0,
+        "S2_test": 0.0,
+        "S3_test": 0.0
+      },
+      "cost": 0.32518104000000003
+    },
+    {
+      "seed": 1,
+      "matched": true,
+      "match_failures": [],
+      "quality_ok": true,
+      "quality_reasons": [],
+      "diagnostics": {
+        "candidate_evals": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "task_rollouts": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "validation_paired": true,
+        "critical_path_depth": {
+          "S2": 1,
+          "S3": 4
+        }
+      },
+      "dev": {
+        "S2": 0.8395238095238096,
+        "S3": 0.7895238095238095,
+        "A_t": -0.050000000000000044
+      },
+      "test": {
+        "S2": 0.7396007326007326,
+        "S3": 0.7399047619047618,
+        "A_t": 0.0003040293040292852
+      },
+      "empty_rates": {
+        "S2_opt": 0.0,
+        "S3_opt": 0.0,
+        "S2_test": 0.0,
+        "S3_test": 0.0
+      },
+      "cost": 0.30419088
+    },
+    {
+      "seed": 2,
+      "matched": true,
+      "match_failures": [],
+      "quality_ok": true,
+      "quality_reasons": [],
+      "diagnostics": {
+        "candidate_evals": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "task_rollouts": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "validation_paired": true,
+        "critical_path_depth": {
+          "S2": 1,
+          "S3": 3
+        }
+      },
+      "dev": {
+        "S2": 0.8145238095238095,
+        "S3": 0.8145238095238095,
+        "A_t": 0.0
+      },
+      "test": {
+        "S2": 0.738626984126984,
+        "S3": 0.7577380952380952,
+        "A_t": 0.01911111111111119
+      },
+      "empty_rates": {
+        "S2_opt": 0.0,
+        "S3_opt": 0.0,
+        "S2_test": 0.0,
+        "S3_test": 0.0
+      },
+      "cost": 0.29692588000000003
+    },
+    {
+      "seed": 3,
+      "matched": true,
+      "match_failures": [],
+      "quality_ok": true,
+      "quality_reasons": [],
+      "diagnostics": {
+        "candidate_evals": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "task_rollouts": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "validation_paired": true,
+        "critical_path_depth": {
+          "S2": 1,
+          "S3": 6
+        }
+      },
+      "dev": {
+        "S2": 0.8911904761904761,
+        "S3": 0.8411904761904762,
+        "A_t": -0.04999999999999993
+      },
+      "test": {
+        "S2": 0.8250591075591076,
+        "S3": 0.8384853625906257,
+        "A_t": 0.013426255031518064
+      },
+      "empty_rates": {
+        "S2_opt": 0.0,
+        "S3_opt": 0.0,
+        "S2_test": 0.0,
+        "S3_test": 0.0
+      },
+      "cost": 0.39645541999999995
+    },
+    {
+      "seed": 4,
+      "matched": true,
+      "match_failures": [],
+      "quality_ok": true,
+      "quality_reasons": [],
+      "diagnostics": {
+        "candidate_evals": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "task_rollouts": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "validation_paired": true,
+        "critical_path_depth": {
+          "S2": 1,
+          "S3": 2
+        }
+      },
+      "dev": {
+        "S2": 0.9161904761904761,
+        "S3": 0.8911904761904761,
+        "A_t": -0.025000000000000022
+      },
+      "test": {
+        "S2": 0.8291755577755577,
+        "S3": 0.8452693528693529,
+        "A_t": 0.01609379509379516
+      },
+      "empty_rates": {
+        "S2_opt": 0.0,
+        "S3_opt": 0.0,
+        "S2_test": 0.0,
+        "S3_test": 0.0
+      },
+      "cost": 0.3560568
+    },
+    {
+      "seed": 5,
+      "matched": true,
+      "match_failures": [],
+      "quality_ok": true,
+      "quality_reasons": [],
+      "diagnostics": {
+        "candidate_evals": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "task_rollouts": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "validation_paired": true,
+        "critical_path_depth": {
+          "S2": 1,
+          "S3": 4
+        }
+      },
+      "dev": {
+        "S2": 0.8911904761904761,
+        "S3": 0.8578571428571429,
+        "A_t": -0.033333333333333215
+      },
+      "test": {
+        "S2": 0.8234115440115439,
+        "S3": 0.8214360195360196,
+        "A_t": -0.001975524475524293
+      },
+      "empty_rates": {
+        "S2_opt": 0.0,
+        "S3_opt": 0.0,
+        "S2_test": 0.0,
+        "S3_test": 0.0
+      },
+      "cost": 0.37783912
+    },
+    {
+      "seed": 6,
+      "matched": true,
+      "match_failures": [],
+      "quality_ok": true,
+      "quality_reasons": [],
+      "diagnostics": {
+        "candidate_evals": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "task_rollouts": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "validation_paired": true,
+        "critical_path_depth": {
+          "S2": 1,
+          "S3": 3
+        }
+      },
+      "dev": {
+        "S2": 0.8911904761904761,
+        "S3": 0.8661904761904762,
+        "A_t": -0.02499999999999991
+      },
+      "test": {
+        "S2": 0.8442934433987065,
+        "S3": 0.8497722943722944,
+        "A_t": 0.005478850973587912
+      },
+      "empty_rates": {
+        "S2_opt": 0.0,
+        "S3_opt": 0.0,
+        "S2_test": 0.0,
+        "S3_test": 0.0
+      },
+      "cost": 0.33624662
+    },
+    {
+      "seed": 7,
+      "matched": true,
+      "match_failures": [],
+      "quality_ok": true,
+      "quality_reasons": [],
+      "diagnostics": {
+        "candidate_evals": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "task_rollouts": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "validation_paired": true,
+        "critical_path_depth": {
+          "S2": 1,
+          "S3": 3
+        }
+      },
+      "dev": {
+        "S2": 0.8983333333333332,
+        "S3": 0.8911904761904761,
+        "A_t": -0.0071428571428571175
+      },
+      "test": {
+        "S2": 0.8387109113109114,
+        "S3": 0.853411544011544,
+        "A_t": 0.014700632700632599
+      },
+      "empty_rates": {
+        "S2_opt": 0.0,
+        "S3_opt": 0.0,
+        "S2_test": 0.0,
+        "S3_test": 0.0
+      },
+      "cost": 0.37875994
+    },
+    {
+      "seed": 8,
+      "matched": true,
+      "match_failures": [],
+      "quality_ok": true,
+      "quality_reasons": [],
+      "diagnostics": {
+        "candidate_evals": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "task_rollouts": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "validation_paired": true,
+        "critical_path_depth": {
+          "S2": 1,
+          "S3": 5
+        }
+      },
+      "dev": {
+        "S2": 0.8911904761904761,
+        "S3": 0.8411904761904762,
+        "A_t": -0.04999999999999993
+      },
+      "test": {
+        "S2": 0.8342934433987065,
+        "S3": 0.832428083028083,
+        "A_t": -0.001865360370623459
+      },
+      "empty_rates": {
+        "S2_opt": 0.0,
+        "S3_opt": 0.0,
+        "S2_test": 0.0,
+        "S3_test": 0.0
+      },
+      "cost": 0.38271331999999997
+    },
+    {
+      "seed": 9,
+      "matched": true,
+      "match_failures": [],
+      "quality_ok": true,
+      "quality_reasons": [],
+      "diagnostics": {
+        "candidate_evals": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "task_rollouts": {
+          "S2": 202,
+          "S3": 202,
+          "equal": true
+        },
+        "validation_paired": true,
+        "critical_path_depth": {
+          "S2": 1,
+          "S3": 3
+        }
+      },
+      "dev": {
+        "S2": 0.8911904761904761,
+        "S3": 0.8911904761904761,
+        "A_t": 0.0
+      },
+      "test": {
+        "S2": 0.845352380952381,
+        "S3": 0.835903552003552,
+        "A_t": -0.009448828948828925
+      },
+      "empty_rates": {
+        "S2_opt": 0.0,
+        "S3_opt": 0.0,
+        "S2_test": 0.0,
+        "S3_test": 0.0
+      },
+      "cost": 0.3391345
+    }
+  ],
+  "merged_from": [
+    "runs/full/frontier__study_hotpotqa",
+    "runs/frontier_study_hotpotqa_fill"
+  ]
+}

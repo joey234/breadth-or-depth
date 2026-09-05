@@ -1,0 +1,113 @@
+{
+  "s0": {
+    "task": "structured",
+    "seed": 0,
+    "faithful": true,
+    "acceptance": "StrictImprovement",
+    "S2_dev": 0.75,
+    "S2_test": 0.75,
+    "S2_depth": 1,
+    "S3_dev": 1.0,
+    "S3_test": 1.0,
+    "S3_depth": 3,
+    "A_t": 0.25,
+    "empty_rate": {
+      "S2": {
+        "optimize": 0.0,
+        "test": 0.0
+      },
+      "S3": {
+        "optimize": 0.0,
+        "test": 0.0
+      }
+    },
+    "max_empty_rate": 0.0,
+    "contaminated": false,
+    "quality_ok": true,
+    "probe": {
+      "seed_score": 0.458,
+      "breadth_ceiling": 0.75,
+      "depth_ceiling": 1.0,
+      "depth_over_breadth": 0.25,
+      "mean_imp_round1": 0.26,
+      "mean_imp_round2": 0.25,
+      "depth_gain": 0.96,
+      "dg_norm": 1.0
+    },
+    "done": true
+  },
+  "s1": {
+    "task": "structured",
+    "seed": 1,
+    "faithful": true,
+    "acceptance": "StrictImprovement",
+    "S2_dev": 0.75,
+    "S2_test": 0.75,
+    "S2_depth": 1,
+    "S3_dev": 1.0,
+    "S3_test": 1.0,
+    "S3_depth": 3,
+    "A_t": 0.25,
+    "empty_rate": {
+      "S2": {
+        "optimize": 0.0,
+        "test": 0.0
+      },
+      "S3": {
+        "optimize": 0.0,
+        "test": 0.0
+      }
+    },
+    "max_empty_rate": 0.0,
+    "contaminated": false,
+    "quality_ok": true,
+    "probe": {
+      "seed_score": 0.438,
+      "breadth_ceiling": 0.75,
+      "depth_ceiling": 1.0,
+      "depth_over_breadth": 0.25,
+      "mean_imp_round1": 0.245,
+      "mean_imp_round2": 0.25,
+      "depth_gain": 1.021,
+      "dg_norm": 1.0
+    },
+    "done": true
+  },
+  "s2": {
+    "task": "structured",
+    "seed": 2,
+    "faithful": true,
+    "acceptance": "StrictImprovement",
+    "S2_dev": 0.75,
+    "S2_test": 0.75,
+    "S2_depth": 1,
+    "S3_dev": 1.0,
+    "S3_test": 1.0,
+    "S3_depth": 3,
+    "A_t": 0.25,
+    "empty_rate": {
+      "S2": {
+        "optimize": 0.0,
+        "test": 0.0
+      },
+      "S3": {
+        "optimize": 0.0,
+        "test": 0.0
+      }
+    },
+    "max_empty_rate": 0.0,
+    "contaminated": false,
+    "quality_ok": true,
+    "probe": {
+      "seed_score": 0.438,
+      "breadth_ceiling": 0.75,
+      "depth_ceiling": 1.0,
+      "depth_over_breadth": 0.25,
+      "mean_imp_round1": 0.19,
+      "mean_imp_round2": 0.151,
+      "depth_gain": 0.795,
+      "dg_norm": 1.0
+    },
+    "done": true
+  }
+}

@@ -1,0 +1,372 @@
+{
+  "s0": {
+    "task": "funccall",
+    "seed": 0,
+    "faithful": false,
+    "acceptance": "AcceptAll",
+    "S2_dev": 0.945,
+    "S2_test": 0.889,
+    "S2_depth": 1,
+    "S3_dev": 0.917,
+    "S3_test": 0.873,
+    "S3_depth": 9,
+    "A_t": -0.016,
+    "empty_rate": {
+      "S2": {
+        "optimize": 0.0,
+        "test": 0.0
+      },
+      "S3": {
+        "optimize": 0.0,
+        "test": 0.0
+      }
+    },
+    "max_empty_rate": 0.0,
+    "contaminated": false,
+    "quality_ok": true,
+    "probe": {
+      "seed_score": 0.472,
+      "breadth_ceiling": 0.945,
+      "depth_ceiling": 0.945,
+      "depth_over_breadth": 0.0,
+      "mean_imp_round1": 0.459,
+      "mean_imp_round2": 0.0,
+      "depth_gain": 0.0,
+      "dg_norm": 0.0
+    },
+    "done": true
+  },
+  "s1": {
+    "task": "funccall",
+    "seed": 1,
+    "faithful": false,
+    "acceptance": "AcceptAll",
+    "S2_dev": 0.945,
+    "S2_test": 0.903,
+    "S2_depth": 1,
+    "S3_dev": 0.973,
+    "S3_test": 0.915,
+    "S3_depth": 8,
+    "A_t": 0.012,
+    "empty_rate": {
+      "S2": {
+        "optimize": 0.0,
+        "test": 0.0
+      },
+      "S3": {
+        "optimize": 0.0,
+        "test": 0.0
+      }
+    },
+    "max_empty_rate": 0.0,
+    "contaminated": false,
+    "quality_ok": true,
+    "probe": {
+      "seed_score": 0.333,
+      "breadth_ceiling": 0.945,
+      "depth_ceiling": 0.945,
+      "depth_over_breadth": 0.0,
+      "mean_imp_round1": 0.612,
+      "mean_imp_round2": 0.0,
+      "depth_gain": 0.0,
+      "dg_norm": 0.0
+    },
+    "done": true
+  },
+  "s2": {
+    "task": "funccall",
+    "seed": 2,
+    "faithful": false,
+    "acceptance": "AcceptAll",
+    "S2_dev": 0.973,
+    "S2_test": 0.917,
+    "S2_depth": 1,
+    "S3_dev": 0.973,
+    "S3_test": 0.934,
+    "S3_depth": 9,
+    "A_t": 0.017,
+    "empty_rate": {
+      "S2": {
+        "optimize": 0.0,
+        "test": 0.0
+      },
+      "S3": {
+        "optimize": 0.0,
+        "test": 0.0
+      }
+    },
+    "max_empty_rate": 0.0,
+    "contaminated": false,
+    "quality_ok": true,
+    "probe": {
+      "seed_score": 0.333,
+      "breadth_ceiling": 0.973,
+      "depth_ceiling": 0.973,
+      "depth_over_breadth": 0.0,
+      "mean_imp_round1": 0.539,
+      "mean_imp_round2": 0.0,
+      "depth_gain": 0.0,
+      "dg_norm": 0.0
+    },
+    "done": true
+  },
+  "s3": {
+    "task": "funccall",
+    "seed": 3,
+    "faithful": false,
+    "acceptance": "AcceptAll",
+    "S2_dev": 0.89,
+    "S2_test": 0.892,
+    "S2_depth": 1,
+    "S3_dev": 0.89,
+    "S3_test": 0.891,
+    "S3_depth": 9,
+    "A_t": -0.001,
+    "empty_rate": {
+      "S2": {
+        "optimize": 0.0,
+        "test": 0.0
+      },
+      "S3": {
+        "optimize": 0.0,
+        "test": 0.0
+      }
+    },
+    "max_empty_rate": 0.0,
+    "contaminated": false,
+    "quality_ok": true,
+    "probe": {
+      "seed_score": 0.306,
+      "breadth_ceiling": 0.89,
+      "depth_ceiling": 0.908,
+      "depth_over_breadth": 0.018,
+      "mean_imp_round1": 0.504,
+      "mean_imp_round2": 0.002,
+      "depth_gain": 0.005,
+      "dg_norm": 0.167
+    },
+    "done": true
+  },
+  "s4": {
+    "task": "funccall",
+    "seed": 4,
+    "faithful": false,
+    "acceptance": "AcceptAll",
+    "S2_dev": 0.959,
+    "S2_test": 0.923,
+    "S2_depth": 1,
+    "S3_dev": 0.959,
+    "S3_test": 0.913,
+    "S3_depth": 5,
+    "A_t": -0.01,
+    "empty_rate": {
+      "S2": {
+        "optimize": 0.0,
+        "test": 0.0
+      },
+      "S3": {
+        "optimize": 0.0,
+        "test": 0.0
+      }
+    },
+    "max_empty_rate": 0.0,
+    "contaminated": false,
+    "quality_ok": true,
+    "probe": {
+      "seed_score": 0.445,
+      "breadth_ceiling": 0.959,
+      "depth_ceiling": 0.959,
+      "depth_over_breadth": 0.0,
+      "mean_imp_round1": 0.453,
+      "mean_imp_round2": 0.0,
+      "depth_gain": 0.0,
+      "dg_norm": 0.0
+    },
+    "done": true
+  },
+  "s5": {
+    "task": "funccall",
+    "seed": 5,
+    "faithful": false,
+    "acceptance": "AcceptAll",
+    "S2_dev": 0.917,
+    "S2_test": 0.917,
+    "S2_depth": 1,
+    "S3_dev": 0.917,
+    "S3_test": 0.918,
+    "S3_depth": 9,
+    "A_t": 0.001,
+    "empty_rate": {
+      "S2": {
+        "optimize": 0.0,
+        "test": 0.0
+      },
+      "S3": {
+        "optimize": 0.0,
+        "test": 0.0
+      }
+    },
+    "max_empty_rate": 0.0,
+    "contaminated": false,
+    "quality_ok": true,
+    "probe": {
+      "seed_score": 0.083,
+      "breadth_ceiling": 0.917,
+      "depth_ceiling": 0.927,
+      "depth_over_breadth": 0.009,
+      "mean_imp_round1": 0.827,
+      "mean_imp_round2": 0.002,
+      "depth_gain": 0.003,
+      "dg_norm": 0.111
+    },
+    "done": true
+  },
+  "s6": {
+    "task": "funccall",
+    "seed": 6,
+    "faithful": false,
+    "acceptance": "AcceptAll",
+    "S2_dev": 0.986,
+    "S2_test": 0.911,
+    "S2_depth": 1,
+    "S3_dev": 0.959,
+    "S3_test": 0.898,
+    "S3_depth": 9,
+    "A_t": -0.013,
+    "empty_rate": {
+      "S2": {
+        "optimize": 0.0,
+        "test": 0.0
+      },
+      "S3": {
+        "optimize": 0.0,
+        "test": 0.0
+      }
+    },
+    "max_empty_rate": 0.0,
+    "contaminated": false,
+    "quality_ok": true,
+    "probe": {
+      "seed_score": 0.25,
+      "breadth_ceiling": 0.959,
+      "depth_ceiling": 0.986,
+      "depth_over_breadth": 0.027,
+      "mean_imp_round1": 0.629,
+      "mean_imp_round2": 0.01,
+      "depth_gain": 0.016,
+      "dg_norm": 0.667
+    },
+    "done": true
+  },
+  "s7": {
+    "task": "funccall",
+    "seed": 7,
+    "faithful": false,
+    "acceptance": "AcceptAll",
+    "S2_dev": 0.929,
+    "S2_test": 0.906,
+    "S2_depth": 1,
+    "S3_dev": 0.929,
+    "S3_test": 0.911,
+    "S3_depth": 5,
+    "A_t": 0.005,
+    "empty_rate": {
+      "S2": {
+        "optimize": 0.0,
+        "test": 0.0
+      },
+      "S3": {
+        "optimize": 0.0,
+        "test": 0.0
+      }
+    },
+    "max_empty_rate": 0.0,
+    "contaminated": false,
+    "quality_ok": true,
+    "probe": {
+      "seed_score": 0.574,
+      "breadth_ceiling": 0.929,
+      "depth_ceiling": 0.922,
+      "depth_over_breadth": -0.007,
+      "mean_imp_round1": 0.349,
+      "mean_imp_round2": 0.0,
+      "depth_gain": 0.0,
+      "dg_norm": 0.0
+    },
+    "done": true
+  },
+  "s8": {
+    "task": "funccall",
+    "seed": 8,
+    "faithful": false,
+    "acceptance": "AcceptAll",
+    "S2_dev": 0.917,
+    "S2_test": 0.926,
+    "S2_depth": 1,
+    "S3_dev": 0.917,
+    "S3_test": 0.921,
+    "S3_depth": 9,
+    "A_t": -0.005,
+    "empty_rate": {
+      "S2": {
+        "optimize": 0.0,
+        "test": 0.0
+      },
+      "S3": {
+        "optimize": 0.0,
+        "test": 0.0
+      }
+    },
+    "max_empty_rate": 0.0,
+    "contaminated": false,
+    "quality_ok": true,
+    "probe": {
+      "seed_score": 0.528,
+      "breadth_ceiling": 0.927,
+      "depth_ceiling": 0.917,
+      "depth_over_breadth": -0.009,
+      "mean_imp_round1": 0.39,
+      "mean_imp_round2": 0.0,
+      "depth_gain": 0.0,
+      "dg_norm": 0.0
+    },
+    "done": true
+  },
+  "s9": {
+    "task": "funccall",
+    "seed": 9,
+    "faithful": false,
+    "acceptance": "AcceptAll",
+    "S2_dev": 0.973,
+    "S2_test": 0.904,
+    "S2_depth": 1,
+    "S3_dev": 0.973,
+    "S3_test": 0.9,
+    "S3_depth": 6,
+    "A_t": -0.004,
+    "empty_rate": {
+      "S2": {
+        "optimize": 0.0,
+        "test": 0.0
+      },
+      "S3": {
+        "optimize": 0.0,
+        "test": 0.0
+      }
+    },
+    "max_empty_rate": 0.0,
+    "contaminated": false,
+    "quality_ok": true,
+    "probe": {
+      "seed_score": 0.25,
+      "breadth_ceiling": 0.973,
+      "depth_ceiling": 0.973,
+      "depth_over_breadth": 0.0,
+      "mean_imp_round1": 0.712,
+      "mean_imp_round2": 0.0,
+      "depth_gain": 0.0,
+      "dg_norm": 0.0
+    },
+    "done": true
+  }
+}
