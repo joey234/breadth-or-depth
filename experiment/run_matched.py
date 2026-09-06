@@ -28,6 +28,7 @@ import os
 from experiment.compounding import (
     build_compound,
     build_compound_chain,
+    build_information_matched_chain,
     matched_depth_gain_probe,
 )
 from experiment.run_study import _load_env
@@ -52,9 +53,28 @@ def _build(task: str, n_train: int, n_dev: int, seed: int):
     if task == "top":
         from experiment.top_task import build_top
         return build_top(n_train, n_dev, n_test, seed=seed, domains=["alarm"]), 400
+    if task == "massive":
+        from experiment.massive_task import build_massive
+        return build_massive(n_train, n_dev, n_test, seed=seed), 256
     if task.startswith("structured_"):
         from experiment.structured_task import build_structured
         return build_structured(n_train, n_dev, n_test, seed=seed, mode=task.split("_", 1)[1]), 256
+    if task.startswith("word_D"):
+        d = int(task.split("word_D", 1)[1])
+        n_sel = n_dev // 2
+        n_val = n_dev - n_sel
+        train, sel, val, test, ev, _ = build_information_matched_chain(
+            n_train,
+            n_sel,
+            n_val,
+            n_test,
+            d=d,
+            seed=seed,
+            information_mode="explicit-overall",
+        )
+        # matched_depth_gain_probe splits its dev argument into parent-selection
+        # and probe-evaluation halves, so preserve those two generated roles here.
+        return (train, sel + val, test, ev), 256
     if task == "ungated":
         return build_compound(n_train, n_dev, n_test, alpha=0.0, seed=seed), 320
     if task == "gated_D2":

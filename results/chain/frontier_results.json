@@ -9080,5 +9080,1515 @@
     "information_mode": "full-specification",
     "schedule": "oracle",
     "done": true
+  },
+  "D4_explicit-overall_oracle_s5": {
+    "config": {
+      "D": 4,
+      "seed": 5,
+      "information_mode": "explicit-overall",
+      "schedule": "oracle",
+      "k": 8,
+      "R": 4,
+      "arms": [
+        "root_local",
+        "root_history",
+        "lineage_history"
+      ],
+      "active_arms": [
+        "root_local",
+        "root_history",
+        "lineage_history"
+      ],
+      "aliased_root_local": false,
+      "n_train": 12,
+      "n_sel": 12,
+      "n_val": 12,
+      "n_test": 20,
+      "task_description": "Apply the transformation specified by the system prompt to the ordered list of input words. The transformation may govern letter case, word order, and required boundary markers. Return only the transformed word sequence.",
+      "p0_hash": "8fc4ab018213c938"
+    },
+    "rounds": [
+      {
+        "round": 1,
+        "transcript_ids": {
+          "root_local": [
+            "uppercase"
+          ],
+          "root_history": [
+            "uppercase"
+          ],
+          "lineage_history": [
+            "uppercase"
+          ]
+        },
+        "transcript_hash": {
+          "root_local": "f56a968431b30b97",
+          "root_history": "f56a968431b30b97",
+          "lineage_history": "f56a968431b30b97"
+        },
+        "parent_prompt_hash": {
+          "root_local": "8fc4ab018213c938",
+          "root_history": "8fc4ab018213c938",
+          "lineage_history": "8fc4ab018213c938"
+        },
+        "minibatch_ids": [
+          0,
+          1,
+          2
+        ],
+        "proposal_count": {
+          "root_local": 8,
+          "root_history": 8,
+          "lineage_history": 8
+        },
+        "selected_score": {
+          "root_local": 0.25,
+          "root_history": 0.25,
+          "lineage_history": 0.25
+        },
+        "selected_stage": {
+          "root_local": 1.0,
+          "root_history": 1.0,
+          "lineage_history": 1.0
+        }
+      },
+      {
+        "round": 2,
+        "transcript_ids": {
+          "root_local": [
+            "uppercase"
+          ],
+          "root_history": [
+            "uppercase",
+            "reverse"
+          ],
+          "lineage_history": [
+            "uppercase",
+            "reverse"
+          ]
+        },
+        "transcript_hash": {
+          "root_local": "f56a968431b30b97",
+          "root_history": "df019d8cb0e17af2",
+          "lineage_history": "df019d8cb0e17af2"
+        },
+        "parent_prompt_hash": {
+          "root_local": "8fc4ab018213c938",
+          "root_history": "8fc4ab018213c938",
+          "lineage_history": "1f148b84ce36726e"
+        },
+        "minibatch_ids": [
+          3,
+          4,
+          5
+        ],
+        "proposal_count": {
+          "root_local": 8,
+          "root_history": 8,
+          "lineage_history": 8
+        },
+        "selected_score": {
+          "root_local": 0.25,
+          "root_history": 0.5,
+          "lineage_history": 0.5
+        },
+        "selected_stage": {
+          "root_local": 1.0,
+          "root_history": 2.0,
+          "lineage_history": 2.0
+        }
+      },
+      {
+        "round": 3,
+        "transcript_ids": {
+          "root_local": [
+            "uppercase"
+          ],
+          "root_history": [
+            "uppercase",
+            "reverse",
+            "end"
+          ],
+          "lineage_history": [
+            "uppercase",
+            "reverse",
+            "end"
+          ]
+        },
+        "transcript_hash": {
+          "root_local": "f56a968431b30b97",
+          "root_history": "e65282e09eb69f5a",
+          "lineage_history": "e65282e09eb69f5a"
+        },
+        "parent_prompt_hash": {
+          "root_local": "8fc4ab018213c938",
+          "root_history": "8fc4ab018213c938",
+          "lineage_history": "8d8c6eb82eabca56"
+        },
+        "minibatch_ids": [
+          6,
+          7,
+          8
+        ],
+        "proposal_count": {
+          "root_local": 8,
+          "root_history": 8,
+          "lineage_history": 8
+        },
+        "selected_score": {
+          "root_local": 0.25,
+          "root_history": 0.75,
+          "lineage_history": 0.75
+        },
+        "selected_stage": {
+          "root_local": 1.0,
+          "root_history": 3.0,
+          "lineage_history": 3.0
+        }
+      },
+      {
+        "round": 4,
+        "transcript_ids": {
+          "root_local": [
+            "uppercase"
+          ],
+          "root_history": [
+            "uppercase",
+            "reverse",
+            "end",
+            "begin"
+          ],
+          "lineage_history": [
+            "uppercase",
+            "reverse",
+            "end",
+            "begin"
+          ]
+        },
+        "transcript_hash": {
+          "root_local": "f56a968431b30b97",
+          "root_history": "f1f68d83707b644f",
+          "lineage_history": "f1f68d83707b644f"
+        },
+        "parent_prompt_hash": {
+          "root_local": "8fc4ab018213c938",
+          "root_history": "8fc4ab018213c938",
+          "lineage_history": "0944f87ee8d9c6a6"
+        },
+        "minibatch_ids": [
+          9,
+          10,
+          11
+        ],
+        "proposal_count": {
+          "root_local": 8,
+          "root_history": 8,
+          "lineage_history": 8
+        },
+        "selected_score": {
+          "root_local": 0.25,
+          "root_history": 1.0,
+          "lineage_history": 1.0
+        },
+        "selected_stage": {
+          "root_local": 1.0,
+          "root_history": 4.0,
+          "lineage_history": 4.0
+        }
+      }
+    ],
+    "final": {
+      "prompt_hash": {
+        "root_local": "66064d92457beaf7",
+        "root_history": "6cfa2944f4fac965",
+        "lineage_history": "6edd7ec0ca45c1df"
+      },
+      "validation": {
+        "root_local": 0.25,
+        "root_history": 1.0,
+        "lineage_history": 1.0
+      },
+      "test": {
+        "root_local": 0.25,
+        "root_history": 1.0,
+        "lineage_history": 1.0
+      },
+      "test_detail": {
+        "root_local": {
+          "score": 0.25,
+          "full_solve": 0.0,
+          "prefix_mean": 1.0,
+          "feature_rates": {
+            "uppercase": 1.0,
+            "reverse": 0.0,
+            "end": 0.0,
+            "begin": 0.0
+          },
+          "empty_rate": 0.0
+        },
+        "root_history": {
+          "score": 1.0,
+          "full_solve": 1.0,
+          "prefix_mean": 4.0,
+          "feature_rates": {
+            "uppercase": 1.0,
+            "reverse": 1.0,
+            "end": 1.0,
+            "begin": 1.0
+          },
+          "empty_rate": 0.0
+        },
+        "lineage_history": {
+          "score": 1.0,
+          "full_solve": 1.0,
+          "prefix_mean": 4.0,
+          "feature_rates": {
+            "uppercase": 1.0,
+            "reverse": 1.0,
+            "end": 1.0,
+            "begin": 1.0
+          },
+          "empty_rate": 0.0
+        }
+      },
+      "feedback_history_effect": 0.75,
+      "prompt_state_effect": 0.0,
+      "total_matched_effect": 0.75
+    },
+    "checks": {
+      "oracle_prompt_sel": 1.0,
+      "oracle_prompt_below_0_95": false,
+      "transcripts_matched": true,
+      "proposal_counts_matched": true,
+      "no_feedback_leakage": true,
+      "visible_rule_best": 1.0,
+      "visible_rule_worst": 1.0,
+      "root_local_unrevealed_best": 0.0,
+      "root_local_implemented_unrevealed": false,
+      "full_specification_alias": false,
+      "task_surface_ok": true
+    },
+    "usage": {
+      "task_tokens_in": 90632,
+      "task_tokens_out": 39988,
+      "reflect_tokens_in": 29848,
+      "reflect_tokens_out": 2436,
+      "task_cost_usd": 0.06611,
+      "reflect_cost_usd": 0.08893,
+      "task_empty_rate": 0.0
+    },
+    "D": 4,
+    "seed": 5,
+    "information_mode": "explicit-overall",
+    "schedule": "oracle",
+    "done": true
+  },
+  "D4_explicit-overall_oracle_s6": {
+    "config": {
+      "D": 4,
+      "seed": 6,
+      "information_mode": "explicit-overall",
+      "schedule": "oracle",
+      "k": 8,
+      "R": 4,
+      "arms": [
+        "root_local",
+        "root_history",
+        "lineage_history"
+      ],
+      "active_arms": [
+        "root_local",
+        "root_history",
+        "lineage_history"
+      ],
+      "aliased_root_local": false,
+      "n_train": 12,
+      "n_sel": 12,
+      "n_val": 12,
+      "n_test": 20,
+      "task_description": "Apply the transformation specified by the system prompt to the ordered list of input words. The transformation may govern letter case, word order, and required boundary markers. Return only the transformed word sequence.",
+      "p0_hash": "8fc4ab018213c938"
+    },
+    "rounds": [
+      {
+        "round": 1,
+        "transcript_ids": {
+          "root_local": [
+            "uppercase"
+          ],
+          "root_history": [
+            "uppercase"
+          ],
+          "lineage_history": [
+            "uppercase"
+          ]
+        },
+        "transcript_hash": {
+          "root_local": "f56a968431b30b97",
+          "root_history": "f56a968431b30b97",
+          "lineage_history": "f56a968431b30b97"
+        },
+        "parent_prompt_hash": {
+          "root_local": "8fc4ab018213c938",
+          "root_history": "8fc4ab018213c938",
+          "lineage_history": "8fc4ab018213c938"
+        },
+        "minibatch_ids": [
+          0,
+          1,
+          2
+        ],
+        "proposal_count": {
+          "root_local": 8,
+          "root_history": 8,
+          "lineage_history": 8
+        },
+        "selected_score": {
+          "root_local": 0.25,
+          "root_history": 0.25,
+          "lineage_history": 0.25
+        },
+        "selected_stage": {
+          "root_local": 1.0,
+          "root_history": 1.0,
+          "lineage_history": 1.0
+        }
+      },
+      {
+        "round": 2,
+        "transcript_ids": {
+          "root_local": [
+            "uppercase"
+          ],
+          "root_history": [
+            "uppercase",
+            "reverse"
+          ],
+          "lineage_history": [
+            "uppercase",
+            "reverse"
+          ]
+        },
+        "transcript_hash": {
+          "root_local": "f56a968431b30b97",
+          "root_history": "df019d8cb0e17af2",
+          "lineage_history": "df019d8cb0e17af2"
+        },
+        "parent_prompt_hash": {
+          "root_local": "8fc4ab018213c938",
+          "root_history": "8fc4ab018213c938",
+          "lineage_history": "bd88f7ba60035034"
+        },
+        "minibatch_ids": [
+          3,
+          4,
+          5
+        ],
+        "proposal_count": {
+          "root_local": 8,
+          "root_history": 8,
+          "lineage_history": 8
+        },
+        "selected_score": {
+          "root_local": 0.25,
+          "root_history": 0.5,
+          "lineage_history": 0.5
+        },
+        "selected_stage": {
+          "root_local": 1.0,
+          "root_history": 2.0,
+          "lineage_history": 2.0
+        }
+      },
+      {
+        "round": 3,
+        "transcript_ids": {
+          "root_local": [
+            "uppercase"
+          ],
+          "root_history": [
+            "uppercase",
+            "reverse",
+            "end"
+          ],
+          "lineage_history": [
+            "uppercase",
+            "reverse",
+            "end"
+          ]
+        },
+        "transcript_hash": {
+          "root_local": "f56a968431b30b97",
+          "root_history": "e65282e09eb69f5a",
+          "lineage_history": "e65282e09eb69f5a"
+        },
+        "parent_prompt_hash": {
+          "root_local": "8fc4ab018213c938",
+          "root_history": "8fc4ab018213c938",
+          "lineage_history": "068bd63917ce51a2"
+        },
+        "minibatch_ids": [
+          6,
+          7,
+          8
+        ],
+        "proposal_count": {
+          "root_local": 8,
+          "root_history": 8,
+          "lineage_history": 8
+        },
+        "selected_score": {
+          "root_local": 0.25,
+          "root_history": 0.75,
+          "lineage_history": 0.75
+        },
+        "selected_stage": {
+          "root_local": 1.0,
+          "root_history": 3.0,
+          "lineage_history": 3.0
+        }
+      },
+      {
+        "round": 4,
+        "transcript_ids": {
+          "root_local": [
+            "uppercase"
+          ],
+          "root_history": [
+            "uppercase",
+            "reverse",
+            "end",
+            "begin"
+          ],
+          "lineage_history": [
+            "uppercase",
+            "reverse",
+            "end",
+            "begin"
+          ]
+        },
+        "transcript_hash": {
+          "root_local": "f56a968431b30b97",
+          "root_history": "f1f68d83707b644f",
+          "lineage_history": "f1f68d83707b644f"
+        },
+        "parent_prompt_hash": {
+          "root_local": "8fc4ab018213c938",
+          "root_history": "8fc4ab018213c938",
+          "lineage_history": "27b0c6fcb0384d00"
+        },
+        "minibatch_ids": [
+          9,
+          10,
+          11
+        ],
+        "proposal_count": {
+          "root_local": 8,
+          "root_history": 8,
+          "lineage_history": 8
+        },
+        "selected_score": {
+          "root_local": 0.25,
+          "root_history": 1.0,
+          "lineage_history": 1.0
+        },
+        "selected_stage": {
+          "root_local": 1.0,
+          "root_history": 4.0,
+          "lineage_history": 4.0
+        }
+      }
+    ],
+    "final": {
+      "prompt_hash": {
+        "root_local": "6311d786fe3d7208",
+        "root_history": "ea4131acb09df21b",
+        "lineage_history": "00afda46ccda8f88"
+      },
+      "validation": {
+        "root_local": 0.25,
+        "root_history": 1.0,
+        "lineage_history": 1.0
+      },
+      "test": {
+        "root_local": 0.25,
+        "root_history": 1.0,
+        "lineage_history": 1.0
+      },
+      "test_detail": {
+        "root_local": {
+          "score": 0.25,
+          "full_solve": 0.0,
+          "prefix_mean": 1.0,
+          "feature_rates": {
+            "uppercase": 1.0,
+            "reverse": 0.0,
+            "end": 0.0,
+            "begin": 0.0
+          },
+          "empty_rate": 0.0
+        },
+        "root_history": {
+          "score": 1.0,
+          "full_solve": 1.0,
+          "prefix_mean": 4.0,
+          "feature_rates": {
+            "uppercase": 1.0,
+            "reverse": 1.0,
+            "end": 1.0,
+            "begin": 1.0
+          },
+          "empty_rate": 0.0
+        },
+        "lineage_history": {
+          "score": 1.0,
+          "full_solve": 1.0,
+          "prefix_mean": 4.0,
+          "feature_rates": {
+            "uppercase": 1.0,
+            "reverse": 1.0,
+            "end": 1.0,
+            "begin": 1.0
+          },
+          "empty_rate": 0.0
+        }
+      },
+      "feedback_history_effect": 0.75,
+      "prompt_state_effect": 0.0,
+      "total_matched_effect": 0.75
+    },
+    "checks": {
+      "oracle_prompt_sel": 1.0,
+      "oracle_prompt_below_0_95": false,
+      "transcripts_matched": true,
+      "proposal_counts_matched": true,
+      "no_feedback_leakage": true,
+      "visible_rule_best": 1.0,
+      "visible_rule_worst": 1.0,
+      "root_local_unrevealed_best": 0.0,
+      "root_local_implemented_unrevealed": false,
+      "full_specification_alias": false,
+      "task_surface_ok": true
+    },
+    "usage": {
+      "task_tokens_in": 94508,
+      "task_tokens_out": 43727,
+      "reflect_tokens_in": 30280,
+      "reflect_tokens_out": 2388,
+      "task_cost_usd": 0.07137,
+      "reflect_cost_usd": 0.08922,
+      "task_empty_rate": 0.0
+    },
+    "D": 4,
+    "seed": 6,
+    "information_mode": "explicit-overall",
+    "schedule": "oracle",
+    "done": true
+  },
+  "D4_explicit-overall_oracle_s7": {
+    "config": {
+      "D": 4,
+      "seed": 7,
+      "information_mode": "explicit-overall",
+      "schedule": "oracle",
+      "k": 8,
+      "R": 4,
+      "arms": [
+        "root_local",
+        "root_history",
+        "lineage_history"
+      ],
+      "active_arms": [
+        "root_local",
+        "root_history",
+        "lineage_history"
+      ],
+      "aliased_root_local": false,
+      "n_train": 12,
+      "n_sel": 12,
+      "n_val": 12,
+      "n_test": 20,
+      "task_description": "Apply the transformation specified by the system prompt to the ordered list of input words. The transformation may govern letter case, word order, and required boundary markers. Return only the transformed word sequence.",
+      "p0_hash": "8fc4ab018213c938"
+    },
+    "rounds": [
+      {
+        "round": 1,
+        "transcript_ids": {
+          "root_local": [
+            "uppercase"
+          ],
+          "root_history": [
+            "uppercase"
+          ],
+          "lineage_history": [
+            "uppercase"
+          ]
+        },
+        "transcript_hash": {
+          "root_local": "f56a968431b30b97",
+          "root_history": "f56a968431b30b97",
+          "lineage_history": "f56a968431b30b97"
+        },
+        "parent_prompt_hash": {
+          "root_local": "8fc4ab018213c938",
+          "root_history": "8fc4ab018213c938",
+          "lineage_history": "8fc4ab018213c938"
+        },
+        "minibatch_ids": [
+          0,
+          1,
+          2
+        ],
+        "proposal_count": {
+          "root_local": 8,
+          "root_history": 8,
+          "lineage_history": 8
+        },
+        "selected_score": {
+          "root_local": 0.25,
+          "root_history": 0.25,
+          "lineage_history": 0.25
+        },
+        "selected_stage": {
+          "root_local": 1.0,
+          "root_history": 1.0,
+          "lineage_history": 1.0
+        }
+      },
+      {
+        "round": 2,
+        "transcript_ids": {
+          "root_local": [
+            "uppercase"
+          ],
+          "root_history": [
+            "uppercase",
+            "reverse"
+          ],
+          "lineage_history": [
+            "uppercase",
+            "reverse"
+          ]
+        },
+        "transcript_hash": {
+          "root_local": "f56a968431b30b97",
+          "root_history": "df019d8cb0e17af2",
+          "lineage_history": "df019d8cb0e17af2"
+        },
+        "parent_prompt_hash": {
+          "root_local": "8fc4ab018213c938",
+          "root_history": "8fc4ab018213c938",
+          "lineage_history": "ac693e9002b623b2"
+        },
+        "minibatch_ids": [
+          3,
+          4,
+          5
+        ],
+        "proposal_count": {
+          "root_local": 8,
+          "root_history": 8,
+          "lineage_history": 8
+        },
+        "selected_score": {
+          "root_local": 0.25,
+          "root_history": 0.5,
+          "lineage_history": 0.5
+        },
+        "selected_stage": {
+          "root_local": 1.0,
+          "root_history": 2.0,
+          "lineage_history": 2.0
+        }
+      },
+      {
+        "round": 3,
+        "transcript_ids": {
+          "root_local": [
+            "uppercase"
+          ],
+          "root_history": [
+            "uppercase",
+            "reverse",
+            "end"
+          ],
+          "lineage_history": [
+            "uppercase",
+            "reverse",
+            "end"
+          ]
+        },
+        "transcript_hash": {
+          "root_local": "f56a968431b30b97",
+          "root_history": "e65282e09eb69f5a",
+          "lineage_history": "e65282e09eb69f5a"
+        },
+        "parent_prompt_hash": {
+          "root_local": "8fc4ab018213c938",
+          "root_history": "8fc4ab018213c938",
+          "lineage_history": "8d8c6eb82eabca56"
+        },
+        "minibatch_ids": [
+          6,
+          7,
+          8
+        ],
+        "proposal_count": {
+          "root_local": 8,
+          "root_history": 8,
+          "lineage_history": 8
+        },
+        "selected_score": {
+          "root_local": 0.25,
+          "root_history": 0.75,
+          "lineage_history": 0.75
+        },
+        "selected_stage": {
+          "root_local": 1.0,
+          "root_history": 3.0,
+          "lineage_history": 3.0
+        }
+      },
+      {
+        "round": 4,
+        "transcript_ids": {
+          "root_local": [
+            "uppercase"
+          ],
+          "root_history": [
+            "uppercase",
+            "reverse",
+            "end",
+            "begin"
+          ],
+          "lineage_history": [
+            "uppercase",
+            "reverse",
+            "end",
+            "begin"
+          ]
+        },
+        "transcript_hash": {
+          "root_local": "f56a968431b30b97",
+          "root_history": "f1f68d83707b644f",
+          "lineage_history": "f1f68d83707b644f"
+        },
+        "parent_prompt_hash": {
+          "root_local": "8fc4ab018213c938",
+          "root_history": "8fc4ab018213c938",
+          "lineage_history": "0944f87ee8d9c6a6"
+        },
+        "minibatch_ids": [
+          9,
+          10,
+          11
+        ],
+        "proposal_count": {
+          "root_local": 8,
+          "root_history": 8,
+          "lineage_history": 8
+        },
+        "selected_score": {
+          "root_local": 0.25,
+          "root_history": 1.0,
+          "lineage_history": 1.0
+        },
+        "selected_stage": {
+          "root_local": 1.0,
+          "root_history": 4.0,
+          "lineage_history": 4.0
+        }
+      }
+    ],
+    "final": {
+      "prompt_hash": {
+        "root_local": "ac693e9002b623b2",
+        "root_history": "5b3061f23b0cc479",
+        "lineage_history": "6edd7ec0ca45c1df"
+      },
+      "validation": {
+        "root_local": 0.25,
+        "root_history": 1.0,
+        "lineage_history": 1.0
+      },
+      "test": {
+        "root_local": 0.25,
+        "root_history": 1.0,
+        "lineage_history": 1.0
+      },
+      "test_detail": {
+        "root_local": {
+          "score": 0.25,
+          "full_solve": 0.0,
+          "prefix_mean": 1.0,
+          "feature_rates": {
+            "uppercase": 1.0,
+            "reverse": 0.0,
+            "end": 0.0,
+            "begin": 0.0
+          },
+          "empty_rate": 0.0
+        },
+        "root_history": {
+          "score": 1.0,
+          "full_solve": 1.0,
+          "prefix_mean": 4.0,
+          "feature_rates": {
+            "uppercase": 1.0,
+            "reverse": 1.0,
+            "end": 1.0,
+            "begin": 1.0
+          },
+          "empty_rate": 0.0
+        },
+        "lineage_history": {
+          "score": 1.0,
+          "full_solve": 1.0,
+          "prefix_mean": 4.0,
+          "feature_rates": {
+            "uppercase": 1.0,
+            "reverse": 1.0,
+            "end": 1.0,
+            "begin": 1.0
+          },
+          "empty_rate": 0.0
+        }
+      },
+      "feedback_history_effect": 0.75,
+      "prompt_state_effect": 0.0,
+      "total_matched_effect": 0.75
+    },
+    "checks": {
+      "oracle_prompt_sel": 1.0,
+      "oracle_prompt_below_0_95": false,
+      "transcripts_matched": true,
+      "proposal_counts_matched": true,
+      "no_feedback_leakage": true,
+      "visible_rule_best": 1.0,
+      "visible_rule_worst": 1.0,
+      "root_local_unrevealed_best": 0.0,
+      "root_local_implemented_unrevealed": false,
+      "full_specification_alias": false,
+      "task_surface_ok": true
+    },
+    "usage": {
+      "task_tokens_in": 85890,
+      "task_tokens_out": 36609,
+      "reflect_tokens_in": 29960,
+      "reflect_tokens_out": 2274,
+      "task_cost_usd": 0.06111,
+      "reflect_cost_usd": 0.08721,
+      "task_empty_rate": 0.0
+    },
+    "D": 4,
+    "seed": 7,
+    "information_mode": "explicit-overall",
+    "schedule": "oracle",
+    "done": true
+  },
+  "D4_explicit-overall_oracle_s8": {
+    "config": {
+      "D": 4,
+      "seed": 8,
+      "information_mode": "explicit-overall",
+      "schedule": "oracle",
+      "k": 8,
+      "R": 4,
+      "arms": [
+        "root_local",
+        "root_history",
+        "lineage_history"
+      ],
+      "active_arms": [
+        "root_local",
+        "root_history",
+        "lineage_history"
+      ],
+      "aliased_root_local": false,
+      "n_train": 12,
+      "n_sel": 12,
+      "n_val": 12,
+      "n_test": 20,
+      "task_description": "Apply the transformation specified by the system prompt to the ordered list of input words. The transformation may govern letter case, word order, and required boundary markers. Return only the transformed word sequence.",
+      "p0_hash": "8fc4ab018213c938"
+    },
+    "rounds": [
+      {
+        "round": 1,
+        "transcript_ids": {
+          "root_local": [
+            "uppercase"
+          ],
+          "root_history": [
+            "uppercase"
+          ],
+          "lineage_history": [
+            "uppercase"
+          ]
+        },
+        "transcript_hash": {
+          "root_local": "f56a968431b30b97",
+          "root_history": "f56a968431b30b97",
+          "lineage_history": "f56a968431b30b97"
+        },
+        "parent_prompt_hash": {
+          "root_local": "8fc4ab018213c938",
+          "root_history": "8fc4ab018213c938",
+          "lineage_history": "8fc4ab018213c938"
+        },
+        "minibatch_ids": [
+          0,
+          1,
+          2
+        ],
+        "proposal_count": {
+          "root_local": 8,
+          "root_history": 8,
+          "lineage_history": 8
+        },
+        "selected_score": {
+          "root_local": 0.25,
+          "root_history": 0.25,
+          "lineage_history": 0.25
+        },
+        "selected_stage": {
+          "root_local": 1.0,
+          "root_history": 1.0,
+          "lineage_history": 1.0
+        }
+      },
+      {
+        "round": 2,
+        "transcript_ids": {
+          "root_local": [
+            "uppercase"
+          ],
+          "root_history": [
+            "uppercase",
+            "reverse"
+          ],
+          "lineage_history": [
+            "uppercase",
+            "reverse"
+          ]
+        },
+        "transcript_hash": {
+          "root_local": "f56a968431b30b97",
+          "root_history": "df019d8cb0e17af2",
+          "lineage_history": "df019d8cb0e17af2"
+        },
+        "parent_prompt_hash": {
+          "root_local": "8fc4ab018213c938",
+          "root_history": "8fc4ab018213c938",
+          "lineage_history": "2c890487141efd7d"
+        },
+        "minibatch_ids": [
+          3,
+          4,
+          5
+        ],
+        "proposal_count": {
+          "root_local": 8,
+          "root_history": 8,
+          "lineage_history": 8
+        },
+        "selected_score": {
+          "root_local": 0.25,
+          "root_history": 0.5,
+          "lineage_history": 0.5
+        },
+        "selected_stage": {
+          "root_local": 1.0,
+          "root_history": 2.0,
+          "lineage_history": 2.0
+        }
+      },
+      {
+        "round": 3,
+        "transcript_ids": {
+          "root_local": [
+            "uppercase"
+          ],
+          "root_history": [
+            "uppercase",
+            "reverse",
+            "end"
+          ],
+          "lineage_history": [
+            "uppercase",
+            "reverse",
+            "end"
+          ]
+        },
+        "transcript_hash": {
+          "root_local": "f56a968431b30b97",
+          "root_history": "e65282e09eb69f5a",
+          "lineage_history": "e65282e09eb69f5a"
+        },
+        "parent_prompt_hash": {
+          "root_local": "8fc4ab018213c938",
+          "root_history": "8fc4ab018213c938",
+          "lineage_history": "c5759afc9584a590"
+        },
+        "minibatch_ids": [
+          6,
+          7,
+          8
+        ],
+        "proposal_count": {
+          "root_local": 8,
+          "root_history": 8,
+          "lineage_history": 8
+        },
+        "selected_score": {
+          "root_local": 0.25,
+          "root_history": 0.75,
+          "lineage_history": 0.7292
+        },
+        "selected_stage": {
+          "root_local": 1.0,
+          "root_history": 3.0,
+          "lineage_history": 2.8333
+        }
+      },
+      {
+        "round": 4,
+        "transcript_ids": {
+          "root_local": [
+            "uppercase"
+          ],
+          "root_history": [
+            "uppercase",
+            "reverse",
+            "end",
+            "begin"
+          ],
+          "lineage_history": [
+            "uppercase",
+            "reverse",
+            "end",
+            "begin"
+          ]
+        },
+        "transcript_hash": {
+          "root_local": "f56a968431b30b97",
+          "root_history": "f1f68d83707b644f",
+          "lineage_history": "f1f68d83707b644f"
+        },
+        "parent_prompt_hash": {
+          "root_local": "8fc4ab018213c938",
+          "root_history": "8fc4ab018213c938",
+          "lineage_history": "46b86897906d2e0a"
+        },
+        "minibatch_ids": [
+          9,
+          10,
+          11
+        ],
+        "proposal_count": {
+          "root_local": 8,
+          "root_history": 8,
+          "lineage_history": 8
+        },
+        "selected_score": {
+          "root_local": 0.25,
+          "root_history": 1.0,
+          "lineage_history": 1.0
+        },
+        "selected_stage": {
+          "root_local": 1.0,
+          "root_history": 4.0,
+          "lineage_history": 4.0
+        }
+      }
+    ],
+    "final": {
+      "prompt_hash": {
+        "root_local": "780b36148bbe194b",
+        "root_history": "f721ad133f51bfb0",
+        "lineage_history": "677c0334616e5265"
+      },
+      "validation": {
+        "root_local": 0.25,
+        "root_history": 1.0,
+        "lineage_history": 1.0
+      },
+      "test": {
+        "root_local": 0.25,
+        "root_history": 0.9875,
+        "lineage_history": 0.9875
+      },
+      "test_detail": {
+        "root_local": {
+          "score": 0.25,
+          "full_solve": 0.0,
+          "prefix_mean": 1.0,
+          "feature_rates": {
+            "uppercase": 1.0,
+            "reverse": 0.0,
+            "end": 0.0,
+            "begin": 0.0
+          },
+          "empty_rate": 0.0
+        },
+        "root_history": {
+          "score": 0.9875,
+          "full_solve": 0.95,
+          "prefix_mean": 3.85,
+          "feature_rates": {
+            "uppercase": 1.0,
+            "reverse": 0.95,
+            "end": 1.0,
+            "begin": 1.0
+          },
+          "empty_rate": 0.0
+        },
+        "lineage_history": {
+          "score": 0.9875,
+          "full_solve": 0.95,
+          "prefix_mean": 3.85,
+          "feature_rates": {
+            "uppercase": 1.0,
+            "reverse": 0.95,
+            "end": 1.0,
+            "begin": 1.0
+          },
+          "empty_rate": 0.0
+        }
+      },
+      "feedback_history_effect": 0.7375,
+      "prompt_state_effect": 0.0,
+      "total_matched_effect": 0.7375
+    },
+    "checks": {
+      "oracle_prompt_sel": 1.0,
+      "oracle_prompt_below_0_95": false,
+      "transcripts_matched": true,
+      "proposal_counts_matched": true,
+      "no_feedback_leakage": true,
+      "visible_rule_best": 1.0,
+      "visible_rule_worst": 1.0,
+      "root_local_unrevealed_best": 0.0,
+      "root_local_implemented_unrevealed": false,
+      "full_specification_alias": false,
+      "task_surface_ok": true
+    },
+    "usage": {
+      "task_tokens_in": 106386,
+      "task_tokens_out": 46056,
+      "reflect_tokens_in": 30640,
+      "reflect_tokens_out": 2521,
+      "task_cost_usd": 0.07654,
+      "reflect_cost_usd": 0.09153,
+      "task_empty_rate": 0.0
+    },
+    "D": 4,
+    "seed": 8,
+    "information_mode": "explicit-overall",
+    "schedule": "oracle",
+    "done": true
+  },
+  "D4_explicit-overall_oracle_s9": {
+    "config": {
+      "D": 4,
+      "seed": 9,
+      "information_mode": "explicit-overall",
+      "schedule": "oracle",
+      "k": 8,
+      "R": 4,
+      "arms": [
+        "root_local",
+        "root_history",
+        "lineage_history"
+      ],
+      "active_arms": [
+        "root_local",
+        "root_history",
+        "lineage_history"
+      ],
+      "aliased_root_local": false,
+      "n_train": 12,
+      "n_sel": 12,
+      "n_val": 12,
+      "n_test": 20,
+      "task_description": "Apply the transformation specified by the system prompt to the ordered list of input words. The transformation may govern letter case, word order, and required boundary markers. Return only the transformed word sequence.",
+      "p0_hash": "8fc4ab018213c938"
+    },
+    "rounds": [
+      {
+        "round": 1,
+        "transcript_ids": {
+          "root_local": [
+            "uppercase"
+          ],
+          "root_history": [
+            "uppercase"
+          ],
+          "lineage_history": [
+            "uppercase"
+          ]
+        },
+        "transcript_hash": {
+          "root_local": "f56a968431b30b97",
+          "root_history": "f56a968431b30b97",
+          "lineage_history": "f56a968431b30b97"
+        },
+        "parent_prompt_hash": {
+          "root_local": "8fc4ab018213c938",
+          "root_history": "8fc4ab018213c938",
+          "lineage_history": "8fc4ab018213c938"
+        },
+        "minibatch_ids": [
+          0,
+          1,
+          2
+        ],
+        "proposal_count": {
+          "root_local": 8,
+          "root_history": 8,
+          "lineage_history": 8
+        },
+        "selected_score": {
+          "root_local": 0.25,
+          "root_history": 0.25,
+          "lineage_history": 0.25
+        },
+        "selected_stage": {
+          "root_local": 1.0,
+          "root_history": 1.0,
+          "lineage_history": 1.0
+        }
+      },
+      {
+        "round": 2,
+        "transcript_ids": {
+          "root_local": [
+            "uppercase"
+          ],
+          "root_history": [
+            "uppercase",
+            "reverse"
+          ],
+          "lineage_history": [
+            "uppercase",
+            "reverse"
+          ]
+        },
+        "transcript_hash": {
+          "root_local": "f56a968431b30b97",
+          "root_history": "df019d8cb0e17af2",
+          "lineage_history": "df019d8cb0e17af2"
+        },
+        "parent_prompt_hash": {
+          "root_local": "8fc4ab018213c938",
+          "root_history": "8fc4ab018213c938",
+          "lineage_history": "80b36f4675413ec2"
+        },
+        "minibatch_ids": [
+          3,
+          4,
+          5
+        ],
+        "proposal_count": {
+          "root_local": 8,
+          "root_history": 8,
+          "lineage_history": 8
+        },
+        "selected_score": {
+          "root_local": 0.25,
+          "root_history": 0.5,
+          "lineage_history": 0.5
+        },
+        "selected_stage": {
+          "root_local": 1.0,
+          "root_history": 2.0,
+          "lineage_history": 2.0
+        }
+      },
+      {
+        "round": 3,
+        "transcript_ids": {
+          "root_local": [
+            "uppercase"
+          ],
+          "root_history": [
+            "uppercase",
+            "reverse",
+            "end"
+          ],
+          "lineage_history": [
+            "uppercase",
+            "reverse",
+            "end"
+          ]
+        },
+        "transcript_hash": {
+          "root_local": "f56a968431b30b97",
+          "root_history": "e65282e09eb69f5a",
+          "lineage_history": "e65282e09eb69f5a"
+        },
+        "parent_prompt_hash": {
+          "root_local": "8fc4ab018213c938",
+          "root_history": "8fc4ab018213c938",
+          "lineage_history": "184b8a0b5cb5afcf"
+        },
+        "minibatch_ids": [
+          6,
+          7,
+          8
+        ],
+        "proposal_count": {
+          "root_local": 8,
+          "root_history": 8,
+          "lineage_history": 8
+        },
+        "selected_score": {
+          "root_local": 0.25,
+          "root_history": 0.75,
+          "lineage_history": 0.75
+        },
+        "selected_stage": {
+          "root_local": 1.0,
+          "root_history": 3.0,
+          "lineage_history": 3.0
+        }
+      },
+      {
+        "round": 4,
+        "transcript_ids": {
+          "root_local": [
+            "uppercase"
+          ],
+          "root_history": [
+            "uppercase",
+            "reverse",
+            "end",
+            "begin"
+          ],
+          "lineage_history": [
+            "uppercase",
+            "reverse",
+            "end",
+            "begin"
+          ]
+        },
+        "transcript_hash": {
+          "root_local": "f56a968431b30b97",
+          "root_history": "f1f68d83707b644f",
+          "lineage_history": "f1f68d83707b644f"
+        },
+        "parent_prompt_hash": {
+          "root_local": "8fc4ab018213c938",
+          "root_history": "8fc4ab018213c938",
+          "lineage_history": "39bcfcfa0f766f6f"
+        },
+        "minibatch_ids": [
+          9,
+          10,
+          11
+        ],
+        "proposal_count": {
+          "root_local": 8,
+          "root_history": 8,
+          "lineage_history": 8
+        },
+        "selected_score": {
+          "root_local": 0.25,
+          "root_history": 1.0,
+          "lineage_history": 1.0
+        },
+        "selected_stage": {
+          "root_local": 1.0,
+          "root_history": 4.0,
+          "lineage_history": 4.0
+        }
+      }
+    ],
+    "final": {
+      "prompt_hash": {
+        "root_local": "c05d386169ee7575",
+        "root_history": "0efb9b737fdcf252",
+        "lineage_history": "f3acd376b6b40fb4"
+      },
+      "validation": {
+        "root_local": 0.25,
+        "root_history": 1.0,
+        "lineage_history": 1.0
+      },
+      "test": {
+        "root_local": 0.25,
+        "root_history": 1.0,
+        "lineage_history": 1.0
+      },
+      "test_detail": {
+        "root_local": {
+          "score": 0.25,
+          "full_solve": 0.0,
+          "prefix_mean": 1.0,
+          "feature_rates": {
+            "uppercase": 1.0,
+            "reverse": 0.0,
+            "end": 0.0,
+            "begin": 0.0
+          },
+          "empty_rate": 0.0
+        },
+        "root_history": {
+          "score": 1.0,
+          "full_solve": 1.0,
+          "prefix_mean": 4.0,
+          "feature_rates": {
+            "uppercase": 1.0,
+            "reverse": 1.0,
+            "end": 1.0,
+            "begin": 1.0
+          },
+          "empty_rate": 0.0
+        },
+        "lineage_history": {
+          "score": 1.0,
+          "full_solve": 1.0,
+          "prefix_mean": 4.0,
+          "feature_rates": {
+            "uppercase": 1.0,
+            "reverse": 1.0,
+            "end": 1.0,
+            "begin": 1.0
+          },
+          "empty_rate": 0.0
+        }
+      },
+      "feedback_history_effect": 0.75,
+      "prompt_state_effect": 0.0,
+      "total_matched_effect": 0.75
+    },
+    "checks": {
+      "oracle_prompt_sel": 0.9896,
+      "oracle_prompt_below_0_95": false,
+      "transcripts_matched": true,
+      "proposal_counts_matched": true,
+      "no_feedback_leakage": true,
+      "visible_rule_best": 1.0,
+      "visible_rule_worst": 1.0,
+      "root_local_unrevealed_best": 0.0,
+      "root_local_implemented_unrevealed": false,
+      "full_specification_alias": false,
+      "task_surface_ok": true
+    },
+    "usage": {
+      "task_tokens_in": 88587,
+      "task_tokens_out": 36261,
+      "reflect_tokens_in": 30496,
+      "reflect_tokens_out": 2483,
+      "task_cost_usd": 0.06123,
+      "reflect_cost_usd": 0.09079,
+      "task_empty_rate": 0.0
+    },
+    "D": 4,
+    "seed": 9,
+    "information_mode": "explicit-overall",
+    "schedule": "oracle",
+    "done": true
   }
 }

@@ -13,14 +13,17 @@ Saved run outputs used by the paper tables.
       Appendix strict-improvement supplements (MASSIVE n=3; structured n=3).
 
   chain/{mid,frontier}_results.json
-      Tables tab:info-matched-chain and tab:full-spec-chain, n=5 per cell.
+      Tables tab:info-matched-chain and tab:full-spec-chain, n=5 per cell
+      except explicit-overall D=4 (n=10).
 
   probe/{mid,frontier}_results.json
-      K=8 matched-probe draws. Figure 1 / tab:probe-full use the locked
-      values in scatter_data.json, not a re-derivation from these files.
+      K=8 matched-probe draws, including MASSIVE and word D=4. Figure 1
+      uses the locked values in scatter_data.json, not a re-derivation
+      from these files. Old dchain* cells are archived only.
 
   scatter_data.json
-      Locked Figure 1 points, matching tab:probe-full.
+      Locked Figure 1 points: tab:probe-full plus MASSIVE (n=10 paired)
+      and word D=4 (n=10 information-matched total effect).
 
 Reprint the tables:
 

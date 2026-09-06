@@ -79,6 +79,26 @@
       "hi": 0.006,
       "truth": "breadth",
       "pred": "breadth"
+    },
+    {
+      "label": "MASSIVE",
+      "g": 0.166,
+      "d": 0.436,
+      "y": 0.207,
+      "lo": 0.142,
+      "hi": 0.273,
+      "truth": "depth",
+      "pred": "depth"
+    },
+    {
+      "label": "word D=4",
+      "g": 0.25,
+      "d": 0.488,
+      "y": 0.72,
+      "lo": 0.673,
+      "hi": 0.767,
+      "truth": "depth",
+      "pred": "depth"
     }
   ],
   "frontier": [
@@ -161,6 +181,26 @@
       "hi": 0.094,
       "truth": "inconclusive",
       "pred": "breadth"
+    },
+    {
+      "label": "MASSIVE",
+      "g": 0.215,
+      "d": 0.813,
+      "y": 0.169,
+      "lo": 0.114,
+      "hi": 0.224,
+      "truth": "depth",
+      "pred": "depth"
+    },
+    {
+      "label": "word D=4",
+      "g": 0.25,
+      "d": 0.333,
+      "y": 0.748,
+      "lo": 0.744,
+      "hi": 0.751,
+      "truth": "depth",
+      "pred": "depth"
     }
   ]
 }

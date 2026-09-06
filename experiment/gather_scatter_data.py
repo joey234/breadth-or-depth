@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""Eight structured/benchmark scatter points, locked to paper Table tab:probe-full.
+"""Scatter points locked to paper Table tab:probe-full plus MASSIVE and word D=4.
 
 D-chain cells are not included. Thresholds are illustrative; this is not a
-calibration/held-out split.
+calibration/held-out split. MASSIVE A_c is n=10 paired accept-all. Word D=4
+A_c is n=10 information-matched total_matched_effect (explicit-overall, D=4),
+not A_state. Probe (g, d) are the K=8 matched draws in results/probe/.
 """
 import json
 from pathlib import Path
@@ -31,6 +33,8 @@ MID = [
     ("PUPA", 0.118, 0.190, 0.047, -0.023, 0.117),
     ("MBPP", 0.000, 0.000, 0.017, 0.008, 0.025),
     ("function calling", 0.000, 0.000, -0.001, -0.009, 0.006),
+    ("MASSIVE", 0.166, 0.436, 0.207, 0.142, 0.273),
+    ("word D=4", 0.250, 0.488, 0.720, 0.673, 0.767),
 ]
 FRONTIER = [
     ("structured-subtle", 0.250, 1.000, 0.250, 0.250, 0.250),
@@ -41,6 +45,8 @@ FRONTIER = [
     ("PUPA", 0.004, 0.013, 0.020, 0.002, 0.037),
     ("MBPP", 0.000, 0.000, -0.002, -0.047, 0.043),
     ("function calling", 0.030, 0.268, 0.028, -0.038, 0.094),
+    ("MASSIVE", 0.215, 0.813, 0.169, 0.114, 0.224),
+    ("word D=4", 0.250, 0.333, 0.748, 0.744, 0.751),
 ]
 
 

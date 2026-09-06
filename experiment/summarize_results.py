@@ -132,7 +132,8 @@ def main() -> None:
     print_gepa("strict", "tab:gepa-replication-ci (strict improvement)")
     print_paired()
     print_chain()
-    print("\nFigure 1 points are locked in results/scatter_data.json (tab:probe-full).")
+    print("\nFigure 1 points are locked in results/scatter_data.json")
+    print("(tab:probe-full plus MASSIVE and word D=4).")
     print("Regenerate the figure with: python experiment/make_scatter.py")
 
 

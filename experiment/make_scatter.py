@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Matched-probe scatter for the eight structured/benchmark configurations.
+"""Matched-probe scatter for the ten locked configurations.
 
 No D-chain points and no calibration/held-out split. Each point is one K=8
-probe draw; A_c is the n=10 paired full-optimizer mean with 95% CI.
+probe draw. A_c is the n=10 paired full-optimizer mean with 95% CI, except
+word D=4 (n=10 information-matched total effect, not paired GEPA).
 """
 import json
 import statistics
@@ -48,14 +49,18 @@ OFFSETS = {
     ("mid", True, "PUPA"): (6, -12),
     ("mid", False, "TOP-v2"): (8, 6),
     ("mid", False, "structured-subtle"): (8, 6),
+    ("mid", False, "MASSIVE"): (-58, -14),
+    ("mid", False, "word D=4"): (8, 6),
     ("frontier", True, "HoVer"): (-42, 10),
     ("frontier", True, "function calling"): (10, -3),
     ("frontier", True, "PUPA"): (6, 6),
     ("frontier", True, "HotpotQA"): (-62, 9),
     ("frontier", True, "IFBench"): (6, -13),
     ("frontier", True, "MBPP"): (10, -22),
-    ("frontier", False, "TOP-v2"): (8, 6),
+    ("frontier", False, "TOP-v2"): (-52, 8),
     ("frontier", False, "structured-subtle"): (8, 6),
+    ("frontier", False, "MASSIVE"): (8, -14),
+    ("frontier", False, "word D=4"): (8, 6),
 }
 
 for col, tier in enumerate(["mid", "frontier"]):
@@ -71,7 +76,7 @@ for col, tier in enumerate(["mid", "frontier"]):
         f"Pearson r={r:.2f}, n_points={len(pts)}"
     )
 
-    for row, (xlim, ylim, zoom) in enumerate([((-0.09, 0.32), (-0.12, 0.32), False),
+    for row, (xlim, ylim, zoom) in enumerate([((-0.09, 0.32), (-0.12, 0.82), False),
                                                ((-0.03, 0.10), (-0.06, 0.06), True)]):
         ax = axes[row][col]
         ax.axhline(0, color="#eeeeee", lw=1, zorder=0)
@@ -117,7 +122,7 @@ legend_elems = [
            linestyle='None', label='inconclusive'),
 ]
 fig.legend(handles=legend_elems, loc="lower center", ncol=3, fontsize=9.5, bbox_to_anchor=(0.5, -0.01))
-fig.suptitle("Matched-probe gap vs. measured lineage advantage, eight configurations ($n=10$ paired $A_c$)",
+fig.suptitle("Matched-probe gap vs. measured lineage advantage, ten configurations",
              fontsize=12.5, y=0.995)
 fig.tight_layout(rect=(0, 0.035, 1, 0.97))
 fig.savefig(OUT_DIR / "bod_scatter.pdf", bbox_inches="tight")

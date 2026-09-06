@@ -124,13 +124,12 @@ def collect_outputs_without_feedback(parent: str, minibatch: list[dict], adapter
     return examples
 
 
-def reflect_with_transcript(
+def _reflection_prompt(
     parent: str,
     transcript: RequirementTranscript,
     task_description: str,
     adapter,
     minibatch: list[dict],
-    reflector,
     examples: list[dict] | None = None,
 ) -> str:
     if examples is None:
@@ -153,7 +152,43 @@ def reflect_with_transcript(
     )
     if "Feedback:" in prompt or "Exact next rule" in prompt:
         raise MatchingError("native evaluator feedback leaked into the reflection prompt")
+    return prompt
+
+
+def reflect_with_transcript(
+    parent: str,
+    transcript: RequirementTranscript,
+    task_description: str,
+    adapter,
+    minibatch: list[dict],
+    reflector,
+    examples: list[dict] | None = None,
+) -> str:
+    prompt = _reflection_prompt(
+        parent, transcript, task_description, adapter, minibatch, examples,
+    )
     return _unwrap_prompt(reflector(prompt) or "", parent)
+
+
+def reflect_batch(
+    parent: str,
+    transcript: RequirementTranscript,
+    task_description: str,
+    adapter,
+    minibatch: list[dict],
+    reflector,
+    k: int,
+    examples: list[dict] | None = None,
+) -> list[str]:
+    prompt = _reflection_prompt(
+        parent, transcript, task_description, adapter, minibatch, examples,
+    )
+    messages_list = [[{"role": "user", "content": prompt}] for _ in range(k)]
+    batch = getattr(reflector, "batch_complete", None)
+    texts = batch(messages_list) if batch is not None else [
+        reflector(prompt) or "" for _ in range(k)
+    ]
+    return [_unwrap_prompt(t or "", parent) for t in texts]
 
 
 def natural_transcript(
@@ -290,18 +325,16 @@ def run_information_matched_replicate(
         for arm in active:
             print(f"    {arm}: reflecting K={k} from {parents[arm][:40]!r}...", flush=True)
             examples = collect_outputs_without_feedback(parents[arm], minibatch, adapter)
-            cands: list[str] = []
-            for _k in range(k):
-                cand = reflect_with_transcript(
-                    parent=parents[arm],
-                    transcript=histories[arm],
-                    task_description=task_description,
-                    adapter=adapter,
-                    minibatch=minibatch,
-                    reflector=reflector,
-                    examples=examples,
-                )
-                cands.append(cand)
+            cands = reflect_batch(
+                parent=parents[arm],
+                transcript=histories[arm],
+                task_description=task_description,
+                adapter=adapter,
+                minibatch=minibatch,
+                reflector=reflector,
+                k=k,
+                examples=examples,
+            )
             generation[arm] = cands
             archives[arm].extend(cands)
             proposal_count[arm] = len(cands)
